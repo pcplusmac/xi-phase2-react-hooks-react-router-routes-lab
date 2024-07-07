@@ -2,7 +2,7 @@ import React from "react";
 import { directors } from "../data";
 
 function Directors() {
-  return <div>{/*{code here}*/}</div>;
+  return <div>you are on page of directores</div>;
 }
 
 export default Directors;
