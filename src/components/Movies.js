@@ -1,14 +1,29 @@
 import React from "react";
 import { movies } from "../data";
+import Movie from "./Movie";
 
-const movie = movies.map((movie,index) => {return( 
-   movie.title)})
+ 
 function Movies() {
+  
+ const movieList = movies.map((movie,index) => (
+    
+      <Movie 
+        key={index}
+        title = {movie.title}
+        time = {movie.time}
+        genres={movie.genres}
+      />
+    
+  ));
+
+  console.log("movies:",movieList);
+  
+  
   return (
     <div>
-      <center><h1>Movies</h1></center>
+      <center><h1>Movies Page</h1></center>
       <div>
-        {movie}
+        {movieList}
         
 
       </div>
