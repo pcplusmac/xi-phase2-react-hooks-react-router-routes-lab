@@ -16,7 +16,7 @@ function NavBar() {
     
     <div>
       <NavLink
-        to="/home"
+        to="/"
         exact
         style={linkStyles}
         activeStyle={{
@@ -36,7 +36,7 @@ function NavBar() {
         Movies
       </NavLink>
       <NavLink
-        to="/Directors"
+        to="/directors"
         exact
         style={linkStyles}
         activeStyle={{
